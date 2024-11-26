@@ -1,6 +1,7 @@
 
 
-import string
-
-
-print(string.ascii_lowercase)
+try : 
+    import django
+    message : str = f'current version: {django.__version__}'
+except ImportError as error:
+    print(error)
